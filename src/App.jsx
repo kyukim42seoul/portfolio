@@ -1,25 +1,25 @@
-import { useState } from 'react';
-import styles from './App.module.css'
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
+import SharedContext from './SharedContext';
+import Home from './page/Home';
+import Dashboard from './page/Dashboard';
 
-let testStringArray = ['Clock', 'Planner'];
+function Main() {
+  const [sharedProp, setSharedProp] = useState(['aaa', 'bbb']);
 
-function App() {
-  const [navItems, setNavItems] = useState(testStringArray);
   return (
-    <div className={styles.app}>
-      What is next?
-      <nav className={styles.navigator}>
-        {navItems.map((item, index) => {
-          return <a key={index} href=''>{item}</a>
-        })}
-      </nav>
-      Hello, I am KyungYoel
-      <br />
-      이번엔 뭘 만들까?
-      <br />
-      <a href='http://localhost:5174/dashboard'>Go Dashboard</a>
-    </div>
-  )
+    <SharedContext.Provider value={{ sharedProp, setSharedProp }}>
+      <BrowserRouter>
+        <nav>
+          <Link to="/home">Home</Link> | <Link to="/dashboard">Dashboard</Link>
+        </nav>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </BrowserRouter>
+    </SharedContext.Provider>
+  );
 }
 
-export default App
+export default Main;

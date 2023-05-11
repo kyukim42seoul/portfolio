@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+Memo.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

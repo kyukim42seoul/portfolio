@@ -1,0 +1,25 @@
+.cute_button {
+	background-color: #3498db;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 24px;
+	border-radius: 50px;
+	transition: all 0.3s;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cute_button:hover {
+	background-color: #2980b9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cute_button:active {
+	background-color: #2980b9;
+	box-shadow: none;
+	transform: translateY(2px);
+  }
+  

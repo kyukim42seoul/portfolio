@@ -7,7 +7,7 @@ import StopWatch from './component/Stopwatch';
 import Timer from './component/Timer';
 
 function Main() {
-  const [sharedProp, setSharedProp] = useState(['Home', 'Dashboard', 'StopWatch', 'Timer']);
+  const [sharedProp, setSharedProp] = useState(['Home', 'Dashboard', 'StopWatch', 'Timer' , 'Login', 'Logout']);
 
   return (
     <SharedContext.Provider value={{ sharedProp, setSharedProp }}>

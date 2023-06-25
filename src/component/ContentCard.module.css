@@ -1,0 +1,49 @@
+.profile_image {
+	background-color: black;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+}
+
+.content_head {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+.user_name {
+	width: 50px;
+	height: 1em;
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.fav_star {
+	all: unset;
+	background-color: yellow;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+.now_date {
+	width: 200px;
+	height: 1.5em;
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.text_content {
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.tag_container {
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import SharedContext from '../SharedContext';
 import Dashboard from './Dashboard';
 import styles from './Home.module.css';
+import Card from '../style/Card';
+import { ContentCard } from '../component/ContentCard';
   
   function Home() {
 	  const { sharedProp, setSharedProp } = useContext(SharedContext);
@@ -20,7 +22,8 @@ import styles from './Home.module.css';
         </nav>
 		<pre>
 			{'Hello, I am KyungYoel\n이번엔 뭘 만들까?\n'}
-		</pre>	
+		</pre>
+    <ContentCard />
     </div>
   )
 }

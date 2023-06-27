@@ -1,0 +1,40 @@
+.modal_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue overlay */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .modal_content {
+	background-color: #ffffff; /* White background */
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal_content h2 {
+	margin-top: 0;
+	color: #0000ff; /* Blue heading color */
+  }
+  
+  .modal_content p {
+	color: #333333; /* Dark text color */
+  }
+  
+  .modal_content button {
+	background-color: #0000ff; /* Blue button background color */
+	color: #ffffff; /* Button text color */
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .modal_content button:hover {
+	background-color: #0033ff; /* Darker blue on button hover */
+  }

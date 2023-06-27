@@ -1,13 +1,22 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SharedContext from '../SharedContext';
-import Dashboard from './Dashboard';
 import styles from './Home.module.css';
-import Card from '../style/Card';
 import { ContentCard } from '../component/ContentCard';
+import Modal from '../component/Modal';
   
   function Home() {
 	  const { sharedProp, setSharedProp } = useContext(SharedContext);
+    const [openModal, setOpenModal] = useState(false);
+
+    const openModalHandler = () => {
+      console.log('openModal clicked!');
+      setOpenModal(true);
+    };
+
+    const closeModalHandler = () => {
+      setOpenModal(false);
+    };
 
   return (
     <div className={styles.app}>
@@ -23,6 +32,8 @@ import { ContentCard } from '../component/ContentCard';
 		<pre>
 			{'Hello, I am KyungYoel\n이번엔 뭘 만들까?\n'}
 		</pre>
+    <button onClick={openModalHandler}>Open Modal</button>
+    <Modal isOpen={openModal} closeModal={closeModalHandler} />
     <ContentCard />
     </div>
   )

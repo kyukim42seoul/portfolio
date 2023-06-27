@@ -11,21 +11,38 @@
 	padding: 0;
 }
 
+.profile_button {
+	all: unset;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	padding: 5px;
+	width: 100px;
+}
+
 .user_name {
 	width: 50px;
 	height: 1em;
 	line-height: 1em;
 	padding: 0;
 	margin: 0;
+	color: black;
 }
 
 .fav_star {
 	all: unset;
-	background-color: yellow;
-	width: 16px;
-	height: 16px;
+	width: 32px;
+	height: 32px;
 	padding: 0;
 	margin: 0;
+	cursor: pointer;
+}
+
+.fav_star_img {
+	width: 32px;
+	height: 32px;
 }
 
 .now_date {
